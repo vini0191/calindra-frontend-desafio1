@@ -106,8 +106,8 @@ export default function Search() {
           <SearchSuggestions>
             {suggestions.length !== 0 && <h2>Sugestões de busca:</h2>}
             <SuggestionsList>
-              {suggestions.map((suggestion, index) => (
-                <Suggestion key={index} onClick={handleClick}>
+              {suggestions.map((suggestion) => (
+                <Suggestion key={suggestion} onClick={handleClick}>
                   {suggestion}
                 </Suggestion>
               ))}
